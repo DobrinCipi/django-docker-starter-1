@@ -10,13 +10,13 @@ def validate_no_a(value):
             raise ValidationError("Caracter nepermis")
         
 def validate_no_sepecial_characters(value):
-    restrition_list = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
-    for a in restrition_list:
+    value = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
+    for a in value:
         raise ValidationError("Nu sunt persmise caractere speciale")
     
 def validate_no_num_in_name(value):
-    list_number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    for a in list_number:
+    value = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    for a in value:
         raise ValidationError("Nu sunt permise cifre")
 
 # Create your models here.
